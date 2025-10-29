@@ -10,3 +10,4 @@
 /home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/refint/apiWeb.Domain.dll
 /home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/apiWeb.Domain.pdb
 /home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/ref/apiWeb.Domain.dll
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/apiWeb.Domain.sourcelink.json

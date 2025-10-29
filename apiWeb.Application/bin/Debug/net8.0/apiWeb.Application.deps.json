@@ -190,10 +190,7 @@
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0"
         },
         "runtime": {
-          "apiWeb.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "apiWeb.Domain.dll": {}
         }
       }
     }

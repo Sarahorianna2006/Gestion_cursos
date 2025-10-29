@@ -1,3 +1,4 @@
+using apiWeb.Application.DTOs;
 using apiWeb.Application.Services;
 using apiWeb.Domain.Models;
 using apiWeb.Infrastructure.Data;
@@ -34,22 +35,36 @@ public class StudentController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateStudentAsync([FromBody] Student student)
+    public async Task<IActionResult> CreateStudentAsync([FromBody] StudentDto studentDto)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
-        
+
+        // Creamos la entidad Student desde el DTO
+        var student = new Student
+        {
+            Name = studentDto.Name,
+            Age = studentDto.Age,
+            Email = studentDto.Email
+        };
+
         await _studentService.CreateStudentAsync(student);
-        
         return Ok(student);
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateStudentAsync(int id, [FromBody] Student student)
+    public async Task<IActionResult> UpdateStudentAsync(int id, [FromBody] StudentDto studentDto)
     {
-        if (id != student.Id)
+        if (id != studentDto.Id)
             return BadRequest("Student ID does not match");
 
+        var student = new Student
+        {
+            Id = studentDto.Id,
+            Name = studentDto.Name,
+            Age = studentDto.Age,
+            Email = studentDto.Email
+        };
         await _studentService.UpdateStudentAsync(student);
         return NoContent();
     }

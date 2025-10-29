@@ -1,3 +1,4 @@
+using apiWeb.Application.DTOs;
 using apiWeb.Domain.Interfaces;
 using apiWeb.Domain.Models;
 
@@ -12,14 +13,29 @@ public class CourseService
         _context = context;
     }
 
-    public async Task<IEnumerable<Course>> GetAllCoursesAsync()
+    public async Task<IEnumerable<CourseDto>> GetAllCoursesAsync()
     {
-        return await _context.GetAllCoursesAsync();
+        var courses = await _context.GetAllCoursesAsync();
+        return courses.Select(c => new CourseDto
+        {
+            Id = c.Id,
+            Title = c.Title,
+            Description = c.Description
+        }).ToList();
     }
     
-    public async Task<Course?> GetCourseByIdAsync(int id)
+    public async Task<CourseDto?> GetCourseByIdAsync(int id)
     {
-        return await _context.GetCourseByIdAsync(id);
+        var course = await _context.GetCourseByIdAsync(id);
+        if (course == null)
+            return null;
+
+        return new CourseDto
+        {
+            Id = course.Id,
+            Title = course.Title,
+            Description = course.Description
+        };
     }
 
     public async Task CreateCourseAsync(Course course)

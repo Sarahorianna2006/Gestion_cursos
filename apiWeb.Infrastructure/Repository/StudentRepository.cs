@@ -12,7 +12,7 @@ public class StudentRepository : IStudentRepository
     {
         _context = context;
     }
-
+    
     public async Task<IEnumerable<Student>> GetAllStudentsAsync()
     {
         return await _context.Students
@@ -25,6 +25,14 @@ public class StudentRepository : IStudentRepository
     {
         return await _context.Students
             .Include(s => s.Registrations)
+            .ThenInclude(r => r.Course)
+            .FirstOrDefaultAsync(s => s.Id == id);
+    }
+
+    public async Task<Student?> GetStudentByIdWithRegistrationsAsync(int id)
+    {
+        return await _context.Students
+            .Include(s => s.Registrations!)    
             .ThenInclude(r => r.Course)
             .FirstOrDefaultAsync(s => s.Id == id);
     }

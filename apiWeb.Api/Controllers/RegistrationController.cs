@@ -39,8 +39,11 @@ public class RegistrationController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult> CreateRegistrationAsync([FromBody] RegistrationDto dto)
+    public async Task<ActionResult> CreateRegistrationAsync([FromBody] RegistrationCreateDto dto)
     {
+        if (dto.StudentId <= 0 || dto.CourseId <= 0)
+            return BadRequest("Both StudentId and CourseId are required");
+
         var registration = new Registration
         {
             StudentId = dto.StudentId,
@@ -48,7 +51,13 @@ public class RegistrationController : ControllerBase
         };
 
         await _registrationService.CreateRegistrationAsync(registration);
-        return Ok(registration);
+
+        return Ok(new
+        {
+            registration.Id,
+            registration.StudentId,
+            registration.CourseId
+        });
     }
 
     [HttpPut("{id}")]
