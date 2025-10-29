@@ -1,0 +1,12 @@
+/home/sarah/courseManagement/apiWeb.Domain/bin/Debug/net8.0/apiWeb.Domain.deps.json
+/home/sarah/courseManagement/apiWeb.Domain/bin/Debug/net8.0/apiWeb.Domain.dll
+/home/sarah/courseManagement/apiWeb.Domain/bin/Debug/net8.0/apiWeb.Domain.pdb
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/apiWeb.Domain.csproj.AssemblyReference.cache
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/apiWeb.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/apiWeb.Domain.AssemblyInfoInputs.cache
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/apiWeb.Domain.AssemblyInfo.cs
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/apiWeb.Domain.csproj.CoreCompileInputs.cache
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/apiWeb.Domain.dll
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/refint/apiWeb.Domain.dll
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/apiWeb.Domain.pdb
+/home/sarah/courseManagement/apiWeb.Domain/obj/Debug/net8.0/ref/apiWeb.Domain.dll

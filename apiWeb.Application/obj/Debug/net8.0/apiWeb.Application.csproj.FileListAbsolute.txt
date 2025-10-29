@@ -1,0 +1,15 @@
+/home/sarah/courseManagement/apiWeb.Application/bin/Debug/net8.0/apiWeb.Application.deps.json
+/home/sarah/courseManagement/apiWeb.Application/bin/Debug/net8.0/apiWeb.Application.dll
+/home/sarah/courseManagement/apiWeb.Application/bin/Debug/net8.0/apiWeb.Application.pdb
+/home/sarah/courseManagement/apiWeb.Application/bin/Debug/net8.0/apiWeb.Domain.dll
+/home/sarah/courseManagement/apiWeb.Application/bin/Debug/net8.0/apiWeb.Domain.pdb
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/apiWeb.Application.csproj.AssemblyReference.cache
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/apiWeb.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/apiWeb.Application.AssemblyInfoInputs.cache
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/apiWeb.Application.AssemblyInfo.cs
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/apiWeb.Application.csproj.CoreCompileInputs.cache
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/apiWeb.A.49EED5F7.Up2Date
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/apiWeb.Application.dll
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/refint/apiWeb.Application.dll
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/apiWeb.Application.pdb
+/home/sarah/courseManagement/apiWeb.Application/obj/Debug/net8.0/ref/apiWeb.Application.dll
