@@ -207,8 +207,8 @@ A continuación se listan los endpoints disponibles en la API:
 
 ### Diagrama Caso de Uso
 
-![Diagrama Caso de Uso](../courseManagement/img/caso_uso.png)
+![Diagrama Caso de Uso](img/caso_uso.png)
 
 ### Diagrama de Clases
 
-![Diagrama Caso de Uso](../courseManagement/img/clase.png)
+![Diagrama de Clases](img/clase.png)
